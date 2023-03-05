@@ -47,8 +47,10 @@ in/test.html
 <html>
 	<head></head>
 	<body>
-		|
-		<chroma># Hello World!</chroma>
+		<chroma>
+			|
+			# Hello World!
+		</chroma>
 	</body>
 </html>
 ```
