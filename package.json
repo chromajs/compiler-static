@@ -1,6 +1,6 @@
 {
 	"name": "chroma-html-compiler",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Chroma's Markdown HTML compiler",
 	"main": "./bin/index.ts",
 	"scripts": {
