@@ -1,6 +1,6 @@
 {
 	"name": "@chromajs/compiler-static",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The static compiler for Chroma.",
 	"main": "./bin/index.ts",
 	"scripts": {
