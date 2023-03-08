@@ -3,7 +3,7 @@
 import { parse } from "ts-command-line-args";
 import { resolve, join } from "path";
 import { existsSync, rmSync, mkdirSync, readdirSync, statSync, copyFileSync, readFileSync, writeFileSync } from "fs";
-import compile from "chroma-compiler";
+import compile from "@chromajs/chroma-compiler";
 
 function getPaths(dirPath: string) {
     let filePaths: string[] = [];
@@ -28,7 +28,6 @@ function getPaths(dirPath: string) {
 interface CLIArgs {
     srcPath: string
     outPath: string
-    tabSpace?: number
     help?: boolean
 }
 
@@ -36,7 +35,6 @@ const args = parse<CLIArgs>(
     {
         srcPath: { type: String, alias: "s", description: "The source folder of your Chroma project" },
         outPath: { type: String, alias: "o", description: "The out folder of your compiled Chroma project" },
-        tabSpace: { type: Number, alias: "t", optional: true, description: "Markdown is white space sensative so we need to know the tab size of your file. Default: 4", defaultValue: 4 },
         help: { type: Boolean, optional: true, alias: "h", description: "Prints this message" },
     },
     {
@@ -47,11 +45,6 @@ const args = parse<CLIArgs>(
 );
 
 if (!args.help) {
-    let tabsToSpaces = "";
-    for (let i = 0; i < args.tabSpace!; i++) {
-        tabsToSpaces += " ";
-    }
-
     if (!existsSync(args.srcPath)) {
         console.log("Failed! SRC Path must exist!");
         process.exit(1);
@@ -97,7 +90,7 @@ if (!args.help) {
             mkdirSync(join(args.outPath, relativeSplit[relativeSplit.length - 2]));
         }
 
-        const content = compile(readFileSync(file, "utf-8"), args.tabSpace);
+        const content = compile(readFileSync(file, "utf-8"));
 
         writeFileSync(join(args.outPath, relativePath), content, "utf-8");
     });

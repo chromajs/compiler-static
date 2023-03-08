@@ -12,7 +12,6 @@ npx chroma-html-compiler -h
 
 -   --srcPath (-s) which defines the directory to compile HTML files from
 -   --outPath (-o) which defines the directory to output compiled HTML files and other project dependencies
--   [--tabSpace (-t)] which defines how many spaces there are per tab. Defaults to 4.
 
 When running Chroma HTML Compiler, Chroma will keep the directory structure of your project,
 it will also keep all additional files in the directory that are not HTML files (ie. js, css, ect.) and
@@ -24,9 +23,9 @@ after it will add compiled HTML files in the correct directory structure
 
 # Clause Code
 
-In Chroma, there is something called the Clause Code. The clause code comes at the start of every chroma tag (except for src chroma tags)
+In Chroma, there is something called the Clause Code. The Clause Code comes at the start of every chroma tag (except for src chroma tags)
 and it tells the compiler the correct spacing of your program. This is needed because Markdown is whitespace sensitive so the character "|"
-at the start of your Chroma tags tells the compiler the correct spacing of your program.
+at the start of your Chroma tags tells the compiler the correct spacing of your program. If no Clause Code is provided, Chroma will assume your indentation based off the first line of Markdown inside your Chroma tags
 
 **|**
 

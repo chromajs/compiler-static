@@ -1,6 +1,6 @@
 {
-	"name": "chroma-html-compiler",
-	"version": "1.0.3",
+	"name": "@chromajs/chroma-html-compiler",
+	"version": "1.0.0",
 	"description": "Chroma's Markdown HTML compiler",
 	"main": "./bin/index.ts",
 	"scripts": {
@@ -10,14 +10,17 @@
 		"chroma-html-compiler": "./dist/index.js"
 	},
 	"repository": "https://github.com/chromajs/chroma-html-compiler",
-	"author": "ChromaJS",
+	"author": "Chroma",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^18.14.6",
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
-		"chroma-compiler": "^1.0.0",
+		"@chromajs/chroma-compiler": "^1.0.1",
 		"ts-command-line-args": "^2.4.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
