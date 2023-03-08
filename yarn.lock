@@ -2,14 +2,11 @@
 # yarn lockfile v1
 
 
-"@chromajs/chroma-compiler@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@chromajs/chroma-compiler/-/chroma-compiler-1.0.1.tgz#3bd5593ab6fd2baa009864e68ad9dc5ffdc91841"
-  integrity sha512-RcceWTQZdUuc1Er29LQFa9wyOm0vysI7QPv/fSr/Zm5O9p3+cDI/6aFZ9i9d4y9PlVWXuQlTWW+kk5WGtfdcpg==
+"@chromajs/compiler@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@chromajs/compiler/-/compiler-1.0.2.tgz#0476c2e4468412a45417cd1b66a29d9fc6fcd2fc"
+  integrity sha512-sydpuTHWRRVgS/kCYBVf/8p3ob3/1Yh5o7aV9HXcvrLtLyTBV9A4trFWSxhG/19jgllA+dOPCcvgcMLa4lNiqg==
   dependencies:
-    "@types/dompurify" "^2.4.0"
-    "@types/jsdom" "^21.1.0"
-    "@types/marked" "^4.0.8"
     dompurify "^3.0.1"
     jsdom "^21.1.0"
     marked "^4.2.12"
@@ -27,41 +24,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@types/dompurify@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@types/dompurify/-/dompurify-2.4.0.tgz#fd9706392a88e0e0e6d367f3588482d817df0ab9"
-  integrity sha512-IDBwO5IZhrKvHFUl+clZxgf3hn2b/lU6H1KaBShPkQyGJUQ0xwebezIPSuiyGwfz1UzJWQl4M7BDxtHtCCPlTg==
-  dependencies:
-    "@types/trusted-types" "*"
-
-"@types/jsdom@^21.1.0":
-  version "21.1.0"
-  resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-21.1.0.tgz#219f15e3370da3f85d18fe02ae86bda7ff66104a"
-  integrity sha512-leWreJOdnuIxq9Y70tBVm/bvTuh31DSlF/r4l7Cfi4uhVQqLHD0Q4v301GMisEMwwbMgF7ZKxuZ+Jbd4NcdmRw==
-  dependencies:
-    "@types/node" "*"
-    "@types/tough-cookie" "*"
-    parse5 "^7.0.0"
-
-"@types/marked@^4.0.8":
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.8.tgz#b316887ab3499d0a8f4c70b7bd8508f92d477955"
-  integrity sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==
-
-"@types/node@*", "@types/node@^18.14.6":
+"@types/node@^18.14.6":
   version "18.14.6"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.14.6.tgz"
   integrity sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==
-
-"@types/tough-cookie@*":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.2.tgz#6286b4c7228d58ab7866d19716f3696e03a09397"
-  integrity sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==
-
-"@types/trusted-types@*":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.3.tgz#a136f83b0758698df454e328759dbd3d44555311"
-  integrity sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==
 
 abab@^2.0.6:
   version "2.0.6"
@@ -448,7 +414,7 @@ optionator@^0.8.1:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-parse5@^7.0.0, parse5@^7.1.1:
+parse5@^7.1.1:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.1.2.tgz#0736bebbfd77793823240a23b7fc5e010b7f8e32"
   integrity sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==

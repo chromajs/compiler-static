@@ -1,6 +1,6 @@
 {
 	"name": "@chromajs/compiler-static",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "The static compiler for Chroma.",
 	"main": "./bin/index.ts",
 	"scripts": {
@@ -17,7 +17,7 @@
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
-		"@chromajs/compiler": "^1.0.1",
+		"@chromajs/compiler": "^1.0.2",
 		"ts-command-line-args": "^2.4.2"
 	},
 	"publishConfig": {
