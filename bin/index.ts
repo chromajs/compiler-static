@@ -3,7 +3,7 @@
 import { parse } from "ts-command-line-args";
 import { resolve, join } from "path";
 import { existsSync, rmSync, mkdirSync, readdirSync, statSync, copyFileSync, readFileSync, writeFileSync } from "fs";
-import compile from "@chromajs/chroma-compiler";
+import compile from "@chromajs/compiler";
 
 function getPaths(dirPath: string) {
     let filePaths: string[] = [];
